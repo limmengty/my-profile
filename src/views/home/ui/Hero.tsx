@@ -1,10 +1,10 @@
 "use client"
 import dynamic from "next/dynamic"
-import Link from "next/link"
 import { useEffect, useRef, useState } from "react"
 import { motion, useReducedMotion, useScroll, useTransform, AnimatePresence } from "framer-motion"
 import { ChevronDown, Clock, Layers, FolderOpen } from "lucide-react"
-import { useTranslations, useLocale } from "next-intl"
+import { useTranslations } from "next-intl"
+import { Link } from "@/i18n/navigation"
 import { Separator } from "@/components/ui/separator"
 import { SpringButton } from "@/shared/ui/SpringButton"
 import { SocialLinks } from "@/shared/ui/SocialLinks"
@@ -53,7 +53,6 @@ const fadeUp = (delay: number) => ({
 
 export default function HomeView() {
   const t = useTranslations("hero")
-  const locale = useLocale()
   const reduced = useReducedMotion()
   const [roleIdx, setRoleIdx] = useState(0)
   const { scrollY } = useScroll()
@@ -104,10 +103,10 @@ export default function HomeView() {
 
           <motion.div {...(reduced ? {} : fadeUp(0.26))} className="mt-7 flex flex-wrap gap-3">
             <SpringButton asChild size="lg" className="h-12 px-7 text-base">
-              <Link href={`/${locale}/projects`}>{t("cta_work")}</Link>
+              <Link href="/about-us">{t("cta_about_us")}</Link>
             </SpringButton>
             <SpringButton asChild variant="outline" size="lg" className="h-12 px-7 text-base">
-              <Link href={`/${locale}/blog`}>{t("cta_blog")}</Link>
+              <Link href="/blog">{t("cta_blog")}</Link>
             </SpringButton>
           </motion.div>
 

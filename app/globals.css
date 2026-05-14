@@ -38,9 +38,6 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
-  --font-sans: Poppins, ui-sans-serif, sans-serif, system-ui;
-  --font-serif: Poppins, ui-sans-serif, sans-serif, system-ui;
-  --font-mono: Roboto Mono, ui-monospace, monospace;
   --radius: 1.3rem;
   --shadow-x: 0;
   --shadow-y: 1px;
@@ -93,9 +90,6 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(0.275 0 0);
   --sidebar-ring: oklch(0.439 0 0);
-  --font-sans: Poppins, ui-sans-serif, sans-serif, system-ui;
-  --font-serif: Poppins, ui-sans-serif, sans-serif, system-ui;
-  --font-mono: Roboto Mono, ui-monospace, monospace;
   --radius: 1.3rem;
   --shadow-x: 0;
   --shadow-y: 1px;
@@ -150,7 +144,7 @@
   --font-sans: var(--font-sans);
   --font-mono: var(--font-mono);
   --font-serif: var(--font-serif);
-  --font-khmer: var(--font-khmer);
+  --font-heading: var(--font-heading);
 
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -173,9 +167,6 @@
   }
   body {
     @apply bg-background text-foreground;
-  }
-  :lang(km) {
-    font-family: var(--font-khmer), sans-serif;
   }
 }
 
