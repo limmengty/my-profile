@@ -16,7 +16,7 @@ export const profile = {
     { label: "Facebook", href: "https://facebook.com/lim.mengty.2025/", icon: "facebook" },
     { label: "Instagram", href: "https://instagram.com/limmengty", icon: "instagram" },
     { label: "Telegram", href: "https://t.me/limmengty", icon: "telegram" },
-    { label: "YouTube", href: "https://youtube.com/@limmengty", icon: "youtube" },
+    { label: "YouTube", href: "https://youtube.com/@limmengti8989", icon: "youtube" },
   ],
   resumeUrl: "/resume.pdf",
 } as const

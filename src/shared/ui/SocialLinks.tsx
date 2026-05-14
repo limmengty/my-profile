@@ -84,7 +84,6 @@ const iconMap: Record<string, React.ElementType> = {
   github: GithubIcon,
   linkedin: LinkedinIcon,
   facebook: FacebookIcon,
-  instagram: InstagramIcon,
   telegram: Send,
   youtube: YoutubeIcon,
 }

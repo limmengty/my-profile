@@ -54,7 +54,7 @@ export default function AboutView() {
             </div>
             <div className="mt-3 flex items-center justify-center gap-1.5 text-xs text-muted-foreground">
               <MapPin size={12} />
-              {profile.location}
+              {tp("location")}
             </div>
           </div>
         </motion.div>

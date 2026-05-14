@@ -1,7 +1,7 @@
 {
   "nav": {
     "home": "ទំព័រដើម",
-    "about": "អំពីខ្ញុំ",
+    "about": "អំពីយេីង",
     "experience": "បទពិសោធន៍",
     "projects": "គម្រោង",
     "blog": "អត្ថបទ",
@@ -11,7 +11,7 @@
     "location": "មានមូលដ្ឋាននៅភ្នំពេញ។",
     "description": "កសាង Web Apps, APIs, និងប្រព័ន្ធដែលអាចពង្រីកបាន។",
     "stack": "Next.js · NestJS · Spring Boot · React · Docker · PostgreSQL",
-    "cta_work": "មើលការងាររបស់ខ្ញុំ",
+    "cta_about_us": "អំពីយេីង",
     "cta_blog": "អានអត្ថបទ",
     "scroll": "រំកិលចុះក្រោម",
     "stats": {
@@ -26,7 +26,7 @@
     }
   },
   "about": {
-    "label": "អំពីខ្ញុំ",
+    "label": "អំពីយេីង",
     "photo_alt": "Lim Mengty — Full-Stack Developer",
     "research": "ការស្រាវជ្រាវ",
     "work": "បទពិសោធន៍ការងារ",

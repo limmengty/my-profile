@@ -1,7 +1,7 @@
 {
   "nav": {
     "home": "Home",
-    "about": "About",
+    "about": "About Us",
     "experience": "Experience",
     "projects": "Projects",
     "blog": "Blog",
@@ -11,7 +11,7 @@
     "location": "based in Phnom Penh.",
     "description": "Building web apps, APIs, and scalable systems.",
     "stack": "Next.js · NestJS · Spring Boot · React · Docker · PostgreSQL",
-    "cta_work": "View My Work",
+    "cta_about_us": "About Us",
     "cta_blog": "Read Blog",
     "scroll": "Scroll",
     "stats": {
@@ -26,7 +26,7 @@
     }
   },
   "about": {
-    "label": "About",
+    "label": "About Us",
     "photo_alt": "Lim Mengty — Full-Stack Developer",
     "research": "Research",
     "work": "Work History",

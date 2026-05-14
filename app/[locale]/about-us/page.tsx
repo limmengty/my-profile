@@ -15,7 +15,7 @@ export default async function Page() {
     "@type": "Person",
     name: tp("name"),
     jobTitle: tp("title"),
-    url: "https://limmengty.dev",
+    url: "https://limmengty.com",
     sameAs: profile.social.map((s) => s.href),
     address: { "@type": "PostalAddress", addressLocality: profile.location },
   }

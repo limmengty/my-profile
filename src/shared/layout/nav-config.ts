@@ -11,7 +11,7 @@ type NavKey = "home" | "about" | "blog" | "contact"
 
 const RAW_NAV: { href: string; key: NavKey; icon: LucideIcon }[] = [
   { href: "/", key: "home", icon: Home },
-  { href: "/about", key: "about", icon: User },
+  { href: "/about-us", key: "about", icon: User },
   { href: "/blog", key: "blog", icon: BookOpen },
   { href: "/contact", key: "contact", icon: Mail },
 ]
