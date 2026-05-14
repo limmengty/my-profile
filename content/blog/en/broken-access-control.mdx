@@ -1,0 +1,74 @@
+---
+title: "Securing Your Web App: A Developer's Guide to Preventing Broken Access Control"
+type: "tech"
+date: "2026-05-14"
+readTime: "6 min"
+tags: ["security", "owasp", "access-control", "web-dev"]
+related: ["rbac-in-nextjs"]
+---
+
+Broken access control is consistently ranked as a critical security vulnerability by OWASP. It occurs when an application fails to properly enforce restrictions on what authenticated users are allowed to do.
+
+> **TL;DR:** Never rely on client-side data like query strings for access control. Centralize your authorization logic on the server, implement secure session management, and adopt a "deny by default" mindset.
+
+## The Danger of Client-Side Access Control
+
+A common and highly dangerous anti-pattern is relying on client-side data—like query strings—to determine a user's role or permissions. For example, allowing a URL parameter like `?role=admin` to grant administrative access.
+
+Using query strings for access control introduces severe risks:
+
+- **Easy manipulation:** Query strings are visible and can be modified by anyone in the browser.
+- **Sensitive data exposure:** Roles or access levels in URLs leak through browser history, server logs, and referer headers.
+- **Validation bypass:** It completely circumvents proper server-side authentication checks.
+- **Increased attack surface:** Attackers can perform unauthorized actions simply by tweaking URL parameters.
+
+## How to Identify Access Control Vulnerabilities
+
+To catch these issues before they reach production, you need to know what to look for in your codebase. Watch out for these red flags:
+
+- Access decisions based on client-controlled inputs (query strings, form data, or headers).
+- Missing or inconsistent authorization checks before sensitive actions or data access.
+- Copy-pasted access control logic that might be incomplete or outdated.
+- Test-only shortcuts left in production environments.
+- Error messages that reveal too much information about your internal access control logic.
+
+## The Prevention Framework
+
+To fix broken access control, you must shift all authorization logic to the server. Relying on client-side inputs is inherently unsafe.
+
+### 1. Implement Secure Session Management
+
+Your access control is only as strong as your session management. When a user logs in, identify them using secure methods:
+
+- Store session identifiers in secure, encrypted cookies so they cannot be easily read or tampered with.
+- Apply strict cookie attributes: **HttpOnly** (prevents JavaScript access), **Secure** (forces HTTPS), and **SameSite** (mitigates CSRF attacks).
+- Generate strong, cryptographically random session tokens.
+- Validate the session token on every single request to confirm identity and permissions.
+- Implement strict session expiration policies and invalidate sessions immediately upon logout or inactivity.
+
+### 2. Centralize Your Access Control
+
+Copy-pasting access control logic across different modules spreads vulnerabilities, causes inconsistent fixes, and creates a maintenance nightmare. Instead, centralize it:
+
+- Create a single access control module or service that handles all authorization checks.
+- Call this centralized module whenever access decisions are needed, rather than duplicating the code.
+- Update rules in one central location so they automatically apply across the entire application.
+
+### 3. Design a Robust Role-Based Access Control (RBAC) System
+
+For large applications, managing individual permissions is unscalable. Implement RBAC by following these steps:
+
+- Define clear roles based on actual job functions (e.g., Editor, Manager, Support).
+- Specify exactly what actions and resources each role can access.
+- Enforce the principle of **least privilege** so users only have the permissions necessary to do their jobs.
+- Use clear, purposeful role naming. Ambiguous names like "super admin" create confusion, lead to accidental misassignments, and complicate security audits.
+
+### 4. Adopt a "Deny by Default" Mindset
+
+Users should never be able to access sensitive resources unless they are explicitly authorized. If an endpoint does not have a specific authorization rule applied to it, it should automatically reject the request.
+
+## Maintaining Security Long-Term
+
+Access control is not a set-it-and-forget-it feature. To maintain a secure environment, you must continuously assess your system.
+
+Test your application by attempting to access restricted resources with unauthorized accounts. Disable any insecure features or debug endpoints that could provide a backdoor for attackers. Finally, ensure you have comprehensive logging and alerting in place. Without proper logs, unauthorized access attempts will go completely unnoticed, making incident response and security auditing nearly impossible.

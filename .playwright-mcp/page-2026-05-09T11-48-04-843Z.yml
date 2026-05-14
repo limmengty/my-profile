@@ -1,0 +1,71 @@
+- generic [active] [ref=e1]:
+    - banner [ref=e2]:
+        - generic [ref=e3]:
+            - link "Lim Mengty" [ref=e4] [cursor=pointer]:
+                - /url: /
+            - navigation "Main" [ref=e5]:
+                - list [ref=e7]:
+                    - listitem [ref=e8]:
+                        - link "About" [ref=e9] [cursor=pointer]:
+                            - /url: /about
+                    - listitem [ref=e10]:
+                        - link "Experience" [ref=e11] [cursor=pointer]:
+                            - /url: /experience
+                    - listitem [ref=e12]:
+                        - link "Projects" [ref=e13] [cursor=pointer]:
+                            - /url: /projects
+                    - listitem [ref=e14]:
+                        - link "Blog" [ref=e15] [cursor=pointer]:
+                            - /url: /blog
+                    - listitem [ref=e16]:
+                        - link "Contact" [ref=e17] [cursor=pointer]:
+                            - /url: /contact
+    - main [ref=e18]:
+        - generic [ref=e22]:
+            - generic [ref=e23]:
+                - generic [ref=e24]: Available for work
+                - heading "Node.js Developer based in Phnom Penh." [level=1] [ref=e26]:
+                    - text: Node.js Developer
+                    - text: based in Phnom Penh.
+                - paragraph [ref=e27]:
+                    - text: Building full-stack apps with Next.js, NestJS & GraphQL.
+                    - text: Allweb · SalaCyber · Norton University.
+                - generic [ref=e28]:
+                    - link "View My Work" [ref=e30] [cursor=pointer]:
+                        - /url: /projects
+                    - link "Read Blog" [ref=e32] [cursor=pointer]:
+                        - /url: /blog
+                - generic [ref=e33]:
+                    - generic [ref=e34]:
+                        - strong [ref=e35]: 2+
+                        - text: yrs exp
+                    - generic [ref=e36]:
+                        - strong [ref=e37]: 10+
+                        - text: stacks
+                    - generic [ref=e38]:
+                        - strong [ref=e39]: 5+
+                        - text: projects
+                - generic [ref=e41]:
+                    - link "GitHub" [ref=e42] [cursor=pointer]:
+                        - /url: https://github.com/limmengty
+                        - img [ref=e43]
+                    - link "LinkedIn" [ref=e45] [cursor=pointer]:
+                        - /url: https://linkedin.com/in/limmengty
+                        - img [ref=e46]
+                    - link "Facebook" [ref=e50] [cursor=pointer]:
+                        - /url: https://facebook.com/lim.mengty.2025
+                        - img [ref=e51]
+                    - link "Instagram" [ref=e53] [cursor=pointer]:
+                        - /url: https://instagram.com/limmengty
+                        - img [ref=e54]
+                    - link "Telegram" [ref=e57] [cursor=pointer]:
+                        - /url: https://t.me/limmengty
+                        - img [ref=e58]
+                    - link "YouTube" [ref=e61] [cursor=pointer]:
+                        - /url: https://youtube.com/@limmengty
+                        - img [ref=e62]
+            - generic [ref=e66]: Move your cursor
+    - contentinfo [ref=e67]:
+        - generic [ref=e68]: © 2026 Lim Mengty · Built with Next.js & shadcn/ui
+    - button "Open Next.js Dev Tools" [ref=e74] [cursor=pointer]:
+        - img [ref=e75]

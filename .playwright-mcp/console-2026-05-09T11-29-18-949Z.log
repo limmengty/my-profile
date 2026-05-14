@@ -1,0 +1,113 @@
+[     244ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[     329ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[     698ms] [LOG] %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[     699ms] [LOG] %c[Vercel Web Analytics]%c [view] http://localhost:3000/experience color: rgb(120, 120, 120) color: inherit {o: http://localhost:3000/experience, sv: 0.1.3, sdkn: @vercel/analytics/react, sdkv: 2.0.1, ts: 1778326159647} /_vercel/insights/view @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[   32876ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[   33151ms] [LOG] [Fast Refresh] done in 247ms @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[   33259ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[   33314ms] [WARNING] %c%s%c [33m[1m⚠[22m[39m metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[   33317ms] [LOG] [Fast Refresh] done in 164ms @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[   62188ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[   62301ms] [LOG] [Fast Refresh] done in 225ms @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[   73084ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[   73136ms] [LOG] [Fast Refresh] done in 157ms @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  305246ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  305625ms] [WARNING] %c%s%c [33m[1m⚠[22m[39m metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  305626ms] [LOG] [Fast Refresh] done in 143ms @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  305822ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  305959ms] [LOG] [Fast Refresh] done in 238ms @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  306149ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  306161ms] [LOG] [Fast Refresh] done in 112ms @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  320907ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  321057ms] [WARNING] %c%s%c [33m[1m⚠[22m[39m metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  321105ms] [LOG] [Fast Refresh] done in 83ms @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  328550ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  328584ms] [LOG] [Fast Refresh] done in 136ms @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  329121ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  329338ms] [LOG] [Fast Refresh] done in 73ms @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  329696ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  329836ms] [LOG] [Fast Refresh] done in 247ms @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  329974ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  330443ms] [LOG] [Fast Refresh] done in 576ms @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  432148ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  432330ms] [WARNING] %c%s%c [33m[1m⚠[22m[39m metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  432367ms] [LOG] [Fast Refresh] done in 100ms @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  445694ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  445818ms] [WARNING] %c%s%c [33m[1m⚠[22m[39m metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  445849ms] [LOG] [Fast Refresh] done in 72ms @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  457884ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  458013ms] [WARNING] %c%s%c [33m[1m⚠[22m[39m metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  458041ms] [LOG] [Fast Refresh] done in 66ms @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  463837ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  464015ms] [LOG] [Fast Refresh] done in 78ms @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  467953ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  467967ms] [LOG] [Fast Refresh] done in 120ms @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  468106ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  468221ms] [LOG] [Fast Refresh] done in 233ms @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  538764ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  538937ms] [WARNING] %c%s%c [33m[1m⚠[22m[39m metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  538976ms] [LOG] [Fast Refresh] done in 98ms @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  557095ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  557276ms] [LOG] [Fast Refresh] done in 281ms @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  625112ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  625268ms] [WARNING] %c%s%c [33m[1m⚠[22m[39m metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  625338ms] [LOG] [Fast Refresh] done in 83ms @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  635400ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  635694ms] [WARNING] %c%s%c [33m[1m⚠[22m[39m metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  635695ms] [LOG] [Fast Refresh] done in 105ms @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  635884ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  636036ms] [LOG] [Fast Refresh] done in 252ms @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  636280ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  636297ms] [LOG] [Fast Refresh] done in 120ms @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  636412ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  636442ms] [LOG] [Fast Refresh] done in 134ms @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  643313ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  643447ms] [WARNING] %c%s%c [33m[1m⚠[22m[39m metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  643453ms] [LOG] [Fast Refresh] done in 75ms @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  652340ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  652474ms] [WARNING] %c%s%c [33m[1m⚠[22m[39m metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  652475ms] [LOG] [Fast Refresh] done in 80ms @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  678134ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  678183ms] [LOG] [Fast Refresh] done in 156ms @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  678335ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  678583ms] [LOG] [Fast Refresh] done in 349ms @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  683377ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  683388ms] [LOG] [Fast Refresh] done in 113ms @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  684843ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  684896ms] [LOG] [Fast Refresh] done in 153ms @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  686662ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  686742ms] [LOG] [Fast Refresh] done in 186ms @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  968097ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  968141ms] [LOG] [Fast Refresh] done in 101ms @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  968246ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  968293ms] [WARNING] %c%s%c [33m[1m⚠[22m[39m metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  968342ms] [LOG] [Fast Refresh] done in 201ms @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  977161ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  977385ms] [LOG] [Fast Refresh] done in 119ms @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  977567ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  977740ms] [LOG] [Fast Refresh] done in 273ms @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  978052ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  978169ms] [LOG] [Fast Refresh] done in 223ms @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  985628ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  985777ms] [WARNING] %c%s%c [33m[1m⚠[22m[39m metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  985778ms] [LOG] [Fast Refresh] done in 82ms @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  990892ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  990910ms] [LOG] [Fast Refresh] done in 118ms @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  993787ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  993984ms] [LOG] [Fast Refresh] done in 73ms @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  995503ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  995531ms] [LOG] [Fast Refresh] done in 133ms @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  996753ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  996859ms] [LOG] [Fast Refresh] done in 208ms @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  996997ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[  997222ms] [LOG] [Fast Refresh] done in 326ms @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[ 1079420ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[ 1079439ms] [LOG] [Fast Refresh] done in 121ms @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[ 1099402ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[ 1099595ms] [LOG] [Fast Refresh] done in 94ms @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[ 1099701ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[ 1099748ms] [LOG] [Fast Refresh] done in 149ms @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[ 1111948ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[ 1111968ms] [LOG] [Fast Refresh] done in 121ms @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[ 1112096ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477
+[ 1112219ms] [LOG] [Fast Refresh] done in 224ms @ http://localhost:3000/_next/static/chunks/0prs_next_dist_05bghtc._.js:2477

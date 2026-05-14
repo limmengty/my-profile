@@ -1,0 +1,78 @@
+---
+title: "RBAC in Next.js App Router — A Practical Guide"
+type: "tech"
+date: "2025-11-10"
+readTime: "8 min"
+tags: ["nextjs", "typescript", "security", "rbac"]
+related: ["hennge-internship"]
+---
+
+Role-based access control (RBAC) is one of those things that seems simple until you implement it in a real application. Here's a pattern that works well with Next.js App Router.
+
+> **TL;DR:** Define roles and permissions in a central model, enforce them in middleware and Server Components, and use client-side checks only for UI state — never for security.
+
+## The Core Model
+
+```typescript
+type Role = "admin" | "editor" | "viewer"
+
+interface Permission {
+  resource: string
+  action: "read" | "write" | "delete"
+}
+
+const rolePermissions: Record<Role, Permission[]> = {
+  admin: [
+    { resource: "*", action: "read" },
+    { resource: "*", action: "write" },
+    { resource: "*", action: "delete" },
+  ],
+  editor: [
+    { resource: "posts", action: "read" },
+    { resource: "posts", action: "write" },
+  ],
+  viewer: [{ resource: "posts", action: "read" }],
+}
+```
+
+## Middleware-Level Protection
+
+```typescript
+// middleware.ts — runs on every request before rendering
+import { NextResponse } from "next/server"
+import type { NextRequest } from "next/server"
+
+export function middleware(request: NextRequest) {
+  const token = request.cookies.get("session")?.value
+  // Redirect unauthenticated users away from protected routes
+  if (!token && request.nextUrl.pathname.startsWith("/admin")) {
+    return NextResponse.redirect(new URL("/login", request.url))
+  }
+  return NextResponse.next()
+}
+```
+
+## Server Component Checks
+
+```typescript
+// app/admin/page.tsx — enforce role on the server, not the client
+import { getSession } from "@/shared/auth/session"
+import { redirect } from "next/navigation"
+
+export default async function AdminPage() {
+  const session = await getSession()
+  // If role check fails, redirect before any UI renders
+  if (session?.role !== "admin") redirect("/")
+  return <AdminDashboard />
+}
+```
+
+## The Key Insight
+
+> ⚠️ **Security rule:** Client components can be manipulated by anyone with DevTools. Always enforce permissions on the server — in middleware, Server Components, or API routes.
+>
+> **Client-side checks are UX. Server-side checks are security. Never confuse the two.**
+
+## Conclusion
+
+RBAC in Next.js App Router is straightforward when you keep the model simple and enforce it at the right layer. Start with middleware for route protection, add Server Component checks for page-level access, and use client checks only for UI state.

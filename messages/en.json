@@ -1,0 +1,213 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "hero": {
+    "location": "based in Phnom Penh.",
+    "description": "Building web apps, APIs, and scalable systems.",
+    "stack": "Next.js · NestJS · Spring Boot · React · Docker · PostgreSQL",
+    "cta_work": "View My Work",
+    "cta_blog": "Read Blog",
+    "scroll": "Scroll",
+    "stats": {
+      "yrs_exp": "yrs exp",
+      "stacks": "stacks",
+      "projects": "projects"
+    },
+    "roles": {
+      "0": "Full-Stack Developer",
+      "1": "Frontend Developer",
+      "2": "Backend Developer"
+    }
+  },
+  "about": {
+    "label": "About",
+    "photo_alt": "Lim Mengty — Full-Stack Developer",
+    "research": "Research",
+    "work": "Work History",
+    "education": "Education",
+    "quote1": "Want to know why cute girls hate me?",
+    "quote2": "We used to write code to solve problems. Now, we architect systems and orchestrate AI to write the code.",
+    "story": "Tractors didn't replace farmers; they replaced the plow. AI won't replace developers, but an engineer driving the AI will absolutely replace the one still handwriting boilerplate. By integrating AI agents into my workflow, my output scales exponentially. This leverage defined my trajectory: moving rapidly from the frontend to leading enterprise backend architecture and DevOps pipelines. I don't just write code—I orchestrate the full stack, from UI to infrastructure, delivering the impact of an entire team."
+  },
+  "experience": {
+    "title": "Experience",
+    "work": "Work Experience",
+    "education": "Education",
+    "research": "Research",
+    "current": "Current",
+    "completed": "Completed"
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Things I've built.",
+    "view_details": "View details",
+    "empty_title": "No projects found",
+    "empty_subtitle": "Nothing here for this category yet.",
+    "categories": {
+      "all": "All",
+      "web_app": "Web App",
+      "research": "Research",
+      "freelance": "Freelance",
+      "internship": "Internship"
+    }
+  },
+  "blog": {
+    "title": "Writing",
+    "subtitle": "Thoughts on engineering, life, and everything in between.",
+    "empty_title": "No posts found",
+    "empty_subtitle": "Nothing written for this category yet.",
+    "types": {
+      "all": "All",
+      "personal": "Personal",
+      "tech": "Tech",
+      "research": "Research",
+      "event": "Event"
+    }
+  },
+  "blog_post": {
+    "back": "Back to Writing",
+    "related": "Related",
+    "on_this_page": "On this page",
+    "copy_link": "Copy link",
+    "copied": "Copied!"
+  },
+  "contact": {
+    "label": "Contact",
+    "heading": "Let's build something great.",
+    "subheading": "Open to freelance projects, collaborations, and full-time opportunities.",
+    "name": "Your name",
+    "email": "Email address",
+    "subject_placeholder": "What's this about?",
+    "message": "Tell me about your project or idea...",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "success_title": "Message sent!",
+    "success_body": "I'll get back to you within 24 hours.",
+    "error_generic": "Something went wrong. Please try again.",
+    "errors": {
+      "name": "Name is required",
+      "email": "Email is required",
+      "message": "Message is required"
+    },
+    "subjects": {
+      "freelance": "Freelance Project",
+      "collaboration": "Collaboration",
+      "fulltime": "Full-time Opportunity",
+      "general": "General Inquiry"
+    },
+    "info": {
+      "email": "Email",
+      "location": "Location",
+      "response": "Response",
+      "response_value": "Within 24 hours",
+      "find_me": "Find me on"
+    }
+  },
+  "education": {
+    "norton": {
+      "degree": "Bachelor of Software Development",
+      "institution": "Norton University"
+    },
+    "tfd_fullstack": {
+      "degree": "Full-Stack Web Development",
+      "institution": "TFD Institute"
+    },
+    "tfd_nestjs": {
+      "degree": "NestJS & Backend Architecture",
+      "institution": "TFD Institute"
+    },
+    "salacyber_devops_edu": {
+      "degree": "DevOps & Cloud Engineering",
+      "institution": "SalaCyber Academy"
+    },
+    "highschool": {
+      "degree": "High School Diploma",
+      "institution": "Srey Sonthor High School"
+    },
+    "born": {
+      "degree": "Born in Kampong Cham Province",
+      "institution": "Kampong Cham, Cambodia"
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  },
+  "profile": {
+    "name": "Lim Mengty",
+    "title": "Full-Stack Developer",
+    "location": "Phnom Penh, Cambodia",
+    "bio": "Full-Stack & DevOps Engineer specializing in scalable enterprise products. NestJS, GraphQL, TypeORM on the backend. Next.js and ShadCN on the frontend. From API design to production-ready Docker and CI/CD pipelines.",
+    "availability": "Available for work"
+  },
+  "work": {
+    "allweb_intern": {
+      "role": "Frontend Developer Intern (Backup Leader)",
+      "bullets": {
+        "0": "Built responsive web interfaces using React.js, Next.js App Router, and Tailwind CSS with ShadCN UI components.",
+        "1": "Developed reusable component libraries and design systems following atomic design principles.",
+        "2": "Integrated REST APIs using TanStack Query for server state management and optimistic updates.",
+        "3": "Participated in code reviews, Agile sprint planning, and collaborated on UI/UX improvements."
+      }
+    },
+    "allweb_nodejs": {
+      "role": "Node.js Developer",
+      "bullets": {
+        "0": "Engineered scalable backend systems using NestJS, GraphQL, TypeORM, and BullMQ.",
+        "1": "Automated robust CI/CD deployment pipelines using GitLab CI.",
+        "2": "Managed application containerization and orchestration using Docker.",
+        "3": "Configured cloud infrastructure and automated server provisioning using Ansible.",
+        "4": "Served as backup lead, supporting cross-functional team coordination and full-stack integration (Next.js/React)."
+      }
+    },
+    "salacyber_devops": {
+      "role": "DevOps Student",
+      "bullets": {
+        "0": "Mastered advanced DevOps practices, CI/CD pipelines, and cloud-native infrastructure.",
+        "1": "Deployed and managed Kubernetes clusters using Rancher, Prometheus, and ArgoCD for GitOps workflows.",
+        "2": "Gained hands-on experience with enterprise-level Linux administration and container orchestration."
+      }
+    }
+  },
+  "research": {
+    "react_nextjs_arch": {
+      "title": "React.js & Next.js Architecture Patterns",
+      "description": "Research on highly scalable frontend architectures using React.js and Next.js with TypeScript for enterprise applications."
+    },
+    "ui_component_systems": {
+      "title": "UI Component Systems",
+      "description": "Study of design system implementations using ShadCN and Material UI to build consistent, accessible user interfaces."
+    },
+    "cicd_orchestration": {
+      "title": "Modern CI/CD & Orchestration",
+      "description": "Exploration of deployment automation and container orchestration using Kubernetes, Ansible, GitLab CI, and Jenkins."
+    }
+  },
+  "projects_data": {
+    "rural-lodge": {
+      "title": "Rural Lodge",
+      "description": "Full-stack hospitality platform featuring booking, property management, and an admin dashboard.",
+      "longDescription": "Executed full-stack development acting as a backup lead. Frontend built with Next.js, React, TanStack Query, and ShadCN. Backend powered by NestJS, GraphQL, TypeORM, and BullMQ. Deployed via Docker and CI/CD pipelines."
+    },
+    "digital-approval": {
+      "title": "Digital Approval System",
+      "description": "Enterprise-level workflow platform designed for multi-department approval processes.",
+      "longDescription": "Developed during my internship at Allweb. Frontend leverages Next.js, ShadCN, and TanStack Query. Backend architecture built on Java Spring Boot, Liquibase, RabbitMQ, Keycloak, and Camunda BPMN. Fully containerized with Docker."
+    },
+    "hrm-mobile": {
+      "title": "HRM Mobile App",
+      "description": "Comprehensive Human Resource Management mobile application for employee and attendance tracking.",
+      "longDescription": "Developed during my internship at Allweb using React. Responsible for architecting UI components, managing form flows, and integrating complex REST APIs."
+    },
+    "portfolio-blog": {
+      "title": "Personal Portfolio & Blog",
+      "description": "My digital home — built from the ground up using Next.js 16, shadcn/ui, Tailwind v4, and MDX.",
+      "longDescription": "A modern personal portfolio and blog featuring an interactive bug-catch game, a dynamic step timeline, and rich-text MDX blog posts."
+    }
+  }
+}

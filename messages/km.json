@@ -1,0 +1,213 @@
+{
+  "nav": {
+    "home": "ទំព័រដើម",
+    "about": "អំពីខ្ញុំ",
+    "experience": "បទពិសោធន៍",
+    "projects": "គម្រោង",
+    "blog": "អត្ថបទ",
+    "contact": "ទំនាក់ទំនង"
+  },
+  "hero": {
+    "location": "មានមូលដ្ឋាននៅភ្នំពេញ។",
+    "description": "កសាង Web Apps, APIs, និងប្រព័ន្ធដែលអាចពង្រីកបាន។",
+    "stack": "Next.js · NestJS · Spring Boot · React · Docker · PostgreSQL",
+    "cta_work": "មើលការងាររបស់ខ្ញុំ",
+    "cta_blog": "អានអត្ថបទ",
+    "scroll": "រំកិលចុះក្រោម",
+    "stats": {
+      "yrs_exp": "ឆ្នាំបទពិសោធន៍",
+      "stacks": "បច្ចេកវិទ្យា",
+      "projects": "គម្រោង"
+    },
+    "roles": {
+      "0": "អ្នកអភិវឌ្ឍ Full-Stack",
+      "1": "អ្នកអភិវឌ្ឍ Frontend",
+      "2": "អ្នកអភិវឌ្ឍ Backend"
+    }
+  },
+  "about": {
+    "label": "អំពីខ្ញុំ",
+    "photo_alt": "Lim Mengty — Full-Stack Developer",
+    "research": "ការស្រាវជ្រាវ",
+    "work": "បទពិសោធន៍ការងារ",
+    "education": "ប្រវត្តិការសិក្សា",
+    "quote1": "ចង់ដឹងអត់ថាម៉េចបានមនុស្សស្រីស្អាតៗស្អប់ខ្ញុំ?",
+    "quote2": "ពីមុនយើងសរសេរកូដដើម្បីដោះស្រាយបញ្ហា។ តែឥឡូវនេះ យើងរៀបចំរចនាសម្ព័ន្ធប្រព័ន្ធ (Architect systems) ហើយប្រើប្រាស់ AI ឲ្យសរសេរកូដជំនួសវិញ។",
+    "story": "ត្រាក់ទ័រមិនបានដណ្តើមការងារកសិករទេ តែវាបានជំនួសនង្គ័ល។ AI នឹងមិនមកជំនួស Developer ទេ ប៉ុន្តែ Engineer ដែលចេះប្រើប្រាស់ AI នឹងមកជំនួសអ្នកដែលនៅតែអង្គុយសរសេរកូដមួយៗ (Boilerplate) ជាក់ជាមិនខាន។ តាមរយៈការបញ្ចូល AI agents ទៅក្នុងរបៀបធ្វើការរបស់ខ្ញុំ លទ្ធផលការងារ (Output) របស់ខ្ញុំបានកើនឡើងជាលំដាប់យ៉ាងលឿន។ ចំណុចនេះហើយដែលជួយជំរុញឲ្យខ្ញុំវិវឌ្ឍខ្លួនបានលឿន៖ ពីការធ្វើត្រឹមតែ Frontend ឈានទៅដល់ការដឹកនាំរៀបចំ Backend architecture និង DevOps pipelines សម្រាប់ប្រព័ន្ធធំៗកម្រិត Enterprise។ ខ្ញុំមិនត្រឹមតែសរសេរកូដនោះទេ — ខ្ញុំរៀបចំនិងគ្រប់គ្រងប្រព័ន្ធទាំងមូល (Full stack) ចាប់ពី UI រហូតដល់ Infrastructure ដែលខ្ញុំម្នាក់ឯងអាចបង្កើតលទ្ធផលស្មើនឹងក្រុមការងារមួយមូល។"
+  },
+  "experience": {
+    "title": "បទពិសោធន៍",
+    "work": "បទពិសោធន៍ការងារ",
+    "education": "ការអប់រំ",
+    "research": "ការស្រាវជ្រាវ",
+    "current": "បច្ចុប្បន្ន",
+    "completed": "បញ្ចប់ការងារ"
+  },
+  "projects": {
+    "title": "គម្រោង",
+    "subtitle": "សមិទ្ធផលដែលខ្ញុំបានបង្កើត។",
+    "view_details": "មើលលម្អិត",
+    "empty_title": "រកមិនឃើញគម្រោង",
+    "empty_subtitle": "មិនទាន់មានគម្រោងសម្រាប់ប្រភេទនេះនៅឡើយទេ។",
+    "categories": {
+      "all": "ទាំងអស់",
+      "web_app": "កម្មវិធី Web",
+      "research": "ការស្រាវជ្រាវ",
+      "freelance": "Freelance",
+      "internship": "កម្មសិក្សា"
+    }
+  },
+  "blog": {
+    "title": "អត្ថបទ",
+    "subtitle": "ទស្សនៈអំពីវិស្វកម្ម ជីវិត និងអ្វីៗជាច្រើនទៀត។",
+    "empty_title": "រកមិនឃើញអត្ថបទ",
+    "empty_subtitle": "មិនទាន់មានអត្ថបទសម្រាប់ប្រភេទនេះនៅឡើយទេ។",
+    "types": {
+      "all": "ទាំងអស់",
+      "personal": "ផ្ទាល់ខ្លួន",
+      "tech": "បច្ចេកវិទ្យា",
+      "research": "ការស្រាវជ្រាវ",
+      "event": "ព្រឹត្តិការណ៍"
+    }
+  },
+  "blog_post": {
+    "back": "ត្រឡប់ទៅទំព័រអត្ថបទវិញ",
+    "related": "អត្ថបទពាក់ព័ន្ធ",
+    "on_this_page": "មាតិកាក្នុងទំព័រនេះ",
+    "copy_link": "ចម្លងតំណ (Copy Link)",
+    "copied": "បានចម្លង!"
+  },
+  "contact": {
+    "label": "ទំនាក់ទំនង",
+    "heading": "តោះបង្កើតអ្វីមួយដ៏អស្ចារ្យទាំងអស់គ្នា។",
+    "subheading": "ស្វាគមន៍ជានិច្ចសម្រាប់គម្រោង Freelance ការសហការ និងឱកាសការងារពេញម៉ោង។",
+    "name": "ឈ្មោះរបស់អ្នក",
+    "email": "អាសយដ្ឋានអ៊ីមែល",
+    "subject_placeholder": "តើអ្នកចង់ជជែកអំពីអ្វី?",
+    "message": "ប្រាប់ខ្ញុំអំពីគម្រោង ឬគំនិតរបស់អ្នក...",
+    "send": "ផ្ញើសារ",
+    "sending": "កំពុងផ្ញើ...",
+    "success_title": "សារបានផ្ញើដោយជោគជ័យ!",
+    "success_body": "ខ្ញុំនឹងឆ្លើយតបទៅអ្នកវិញក្នុងរយៈពេល ២៤ ម៉ោង។",
+    "error_generic": "មានបញ្ហាកើតឡើង។ សូមព្យាយាមម្តងទៀត។",
+    "errors": {
+      "name": "សូមបំពេញឈ្មោះរបស់អ្នក",
+      "email": "សូមបំពេញអ៊ីមែលរបស់អ្នក",
+      "message": "សូមបំពេញសាររបស់អ្នក"
+    },
+    "subjects": {
+      "freelance": "គម្រោង Freelance",
+      "collaboration": "ការសហការ",
+      "fulltime": "ឱកាសការងារពេញម៉ោង",
+      "general": "សំណួរទូទៅ"
+    },
+    "info": {
+      "email": "អ៊ីមែល",
+      "location": "ទីតាំង",
+      "response": "ការឆ្លើយតប",
+      "response_value": "ក្នុងរយៈពេល ២៤ ម៉ោង",
+      "find_me": "ស្វែងរកខ្ញុំនៅលើ"
+    }
+  },
+  "education": {
+    "norton": {
+      "degree": "បរិញ្ញាបត្រអភិវឌ្ឍន៍សូហ្វវែរ",
+      "institution": "សាកលវិទ្យាល័យ ន័រតុន (Norton University)"
+    },
+    "tfd_fullstack": {
+      "degree": "អភិវឌ្ឍន៍គេហទំព័រ Full-Stack",
+      "institution": "វិទ្យាស្ថាន TFD"
+    },
+    "tfd_nestjs": {
+      "degree": "ជំនាញ NestJS និងស្ថាបត្យកម្ម Backend",
+      "institution": "វិទ្យាស្ថាន TFD"
+    },
+    "salacyber_devops_edu": {
+      "degree": "DevOps និងវិស្វកម្ម Cloud",
+      "institution": "SalaCyber Academy"
+    },
+    "highschool": {
+      "degree": "សញ្ញាបត្រមធ្យមសិក្សាទុតិយភូមិ",
+      "institution": "វិទ្យាល័យស្រីសន្ធរ"
+    },
+    "born": {
+      "degree": "កើតនៅខេត្តកំពង់ចាម",
+      "institution": "ខេត្តកំពង់ចាម, កម្ពុជា"
+    }
+  },
+  "footer": {
+    "rights": "រក្សាសិទ្ធិគ្រប់យ៉ាង។"
+  },
+  "profile": {
+    "name": "លីម ម៉េងទី",
+    "title": "អ្នកអភិវឌ្ឍ Full-Stack",
+    "location": "ភ្នំពេញ, កម្ពុជា",
+    "bio": "វិស្វករ Full-Stack & DevOps ដែលជំនាញក្នុងការកសាងផលិតផលសហគ្រាសដែលអាចពង្រីកបាន។ NestJS, GraphQL, TypeORM នៅ Backend។ Next.js និង ShadCN នៅ Frontend។ ពី API Design រហូតដល់ Docker និង CI/CD Pipelines ដែលត្រៀមសម្រាប់ Production។",
+    "availability": "បើកចំហសម្រាប់ការងារ"
+  },
+  "work": {
+    "allweb_intern": {
+      "role": "អ្នកហ្វឹកហាត់ Frontend (ប្រធានក្រុមបម្រុង)",
+      "bullets": {
+        "0": "អភិវឌ្ឍចំណុចប្រទាក់វេបសាយដែលអាចបត់បែនតាមទំហំអេក្រង់ ដោយប្រើ React.js, Next.js App Router, Tailwind CSS និង ShadCN UI។",
+        "1": "បង្កើត Component Library និង Design System ដែលអាចប្រើប្រាស់ឡើងវិញ តាមគោលការណ៍ Atomic Design។",
+        "2": "ភ្ជាប់ REST API ដោយប្រើ TanStack Query សម្រាប់គ្រប់គ្រង Server State និង Optimistic Updates។",
+        "3": "ចូលរួមក្នុងការពិនិត្យកូដ ការរៀបចំ Agile Sprint និងសហការលើការកែលម្អ UI/UX។"
+      }
+    },
+    "allweb_nodejs": {
+      "role": "អ្នកអភិវឌ្ឍន៍ Node.js",
+      "bullets": {
+        "0": "អភិវឌ្ឍប្រព័ន្ធ Backend ដែលអាចពង្រីកសមត្ថភាពបាន ដោយប្រើ NestJS, GraphQL, TypeORM, និង BullMQ។",
+        "1": "រៀបចំប្រព័ន្ធស្វ័យប្រវត្តិកម្ម CI/CD Deployment Pipelines ដោយប្រើ GitLab CI។",
+        "2": "គ្រប់គ្រង Containerization & Orchestration ដោយប្រើ Docker។",
+        "3": "រៀបចំហេដ្ឋារចនាសម្ព័ន្ធ Cloud និង Server Provisioning ដោយប្រើ Ansible។",
+        "4": "ដើរតួជាប្រធានក្រុមបម្រុង ដោយជួយសម្របសម្រួលការងារក្នុងក្រុម និងតភ្ជាប់ប្រព័ន្ធទាំងមូល (Next.js/React)។"
+      }
+    },
+    "salacyber_devops": {
+      "role": "និស្សិត DevOps",
+      "bullets": {
+        "0": "សិក្សាស៊ីជម្រៅលើ DevOps, CI/CD Pipelines, និងហេដ្ឋារចនាសម្ព័ន្ធ Cloud-native។",
+        "1": "ដាក់ពង្រាយ និងគ្រប់គ្រង Kubernetes Clusters ដោយប្រើ Rancher, Prometheus, និង ArgoCD។",
+        "2": "ទទួលបានបទពិសោធន៍ Linux Administration កម្រិតសហគ្រាស និង Container Orchestration។"
+      }
+    }
+  },
+  "research": {
+    "react_nextjs_arch": {
+      "title": "គំរូស្ថាបត្យកម្ម React.js & Next.js",
+      "description": "ស្រាវជ្រាវស្តីពីស្ថាបត្យកម្ម Frontend ដែលមានសមត្ថភាពពង្រីក (Scalable) សម្រាប់កម្មវិធីខ្នាតសហគ្រាស ដោយប្រើ React.js និង Next.js ជាមួយ TypeScript។"
+    },
+    "ui_component_systems": {
+      "title": "ប្រព័ន្ធ UI Component",
+      "description": "សិក្សាអំពីការអនុវត្ត Design System ដោយប្រើ ShadCN និង Material UI សម្រាប់បង្កើតចំណុចប្រទាក់ដែលស្របគ្នា និងងាយស្រួលប្រើប្រាស់។"
+    },
+    "cicd_orchestration": {
+      "title": "CI/CD & Orchestration សម័យទំនើប",
+      "description": "ស្វែងយល់អំពីស្វ័យប្រវត្តិកម្មនៃការដាក់កម្មវិធីឱ្យដំណើរការ (Deployment Automation) ដោយប្រើ Kubernetes, Ansible, GitLab CI, និង Jenkins។"
+    }
+  },
+  "projects_data": {
+    "rural-lodge": {
+      "title": "Rural Lodge",
+      "description": "វេទិកាបដិសណ្ឋារកិច្ច Full-stack រួមមានមុខងារកក់បន្ទប់ ការគ្រប់គ្រងអចលនទ្រព្យ និងផ្ទាំងគ្រប់គ្រង (Admin Dashboard)។",
+      "longDescription": "ចូលរួមអភិវឌ្ឍ Full-stack ក្នុងនាមជាប្រធានក្រុមស្តីទី (Backup Lead)។ ផ្នែក Frontend ប្រើប្រាស់ Next.js, React, TanStack Query, និង ShadCN។ ផ្នែក Backend ប្រើប្រាស់ NestJS, GraphQL, TypeORM, និង BullMQ ព្រមទាំងរៀបចំការដាក់ពង្រាយដោយ Docker និង CI/CD Pipelines។"
+    },
+    "digital-approval": {
+      "title": "ប្រព័ន្ធអនុម័តឌីជីថល (Digital Approval System)",
+      "description": "វេទិកាសម្រាប់គ្រប់គ្រងលំហូរការងារ (Workflow) ក្នុងសហគ្រាស សម្រាប់ដំណើរការអនុម័តឯកសារឆ្លងកាត់ច្រើននាយកដ្ឋាន។",
+      "longDescription": "អភិវឌ្ឍក្នុងអំឡុងពេលធ្វើកម្មសិក្សានៅ Allweb។ ផ្នែក Frontend ប្រើ Next.js, ShadCN, និង TanStack Query។ ផ្នែក Backend ប្រើ Java Spring Boot, Liquibase, RabbitMQ, Keycloak, និង Camunda BPMN រួមទាំងការប្រើប្រាស់ Docker។"
+    },
+    "hrm-mobile": {
+      "title": "កម្មវិធីទូរស័ព្ទ HRM",
+      "description": "កម្មវិធីទូរស័ព្ទដៃសម្រាប់គ្រប់គ្រងធនធានមនុស្ស (HRM) រួមមានការគ្រប់គ្រងបុគ្គលិក និងវត្តមាន។",
+      "longDescription": "អភិវឌ្ឍក្នុងអំឡុងពេលធ្វើកម្មសិក្សានៅ Allweb ដោយប្រើប្រាស់ React។ ទទួលបន្ទុករៀបចំ UI Components, លំហូរនៃការបំពេញទម្រង់ (Form Flows) និងការតភ្ជាប់ជាមួយ REST API កម្រិតស្មុគស្មាញ។"
+    },
+    " -blog": {
+      "title": "Portfolio & Blog ផ្ទាល់ខ្លួន",
+      "description": "គេហទំព័រដែលអ្នកកំពុងមើលនេះ — បង្កើតឡើងដោយ Next.js 16, shadcn/ui, Tailwind v4, និង MDX។",
+      "longDescription": "គម្រោង Portfolio និង Blog ផ្ទាល់ខ្លួន រួមមានហ្គេមចាប់សត្វល្អិតខ្នាតតូច, ដំណើរពេលវេលា (Step Timeline), និងការប្រើប្រាស់ MDX សម្រាប់សរសេរអត្ថបទ។"
+    }
+  }
+}

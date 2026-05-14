@@ -1,0 +1,78 @@
+---
+title: "ការអនុវត្ត RBAC ក្នុង Next.js App Router — ការណែនាំជាក់ស្តែង"
+type: "tech"
+date: "2025-11-10"
+readTime: "8 min"
+tags: ["nextjs", "typescript", "security", "rbac"]
+related: ["hennge-internship"]
+---
+
+ការគ្រប់គ្រងសិទ្ធិប្រើប្រាស់ផ្អែកលើតួនាទី (Role-based access control - RBAC) ជារឿងមួយដែលមើលទៅហាក់ដូចជាងាយស្រួល រហូតទាល់តែអ្នកយកវាទៅអនុវត្តក្នុងកម្មវិធីជាក់ស្តែង។ ខាងក្រោមនេះគឺជាគំរូ (Pattern) មួយដែលដំណើរការបានយ៉ាងល្អជាមួយ Next.js App Router។
+
+> **សេចក្តីសង្ខេប (TL;DR):** កំណត់ Roles និង Permissions នៅក្នុង Central model មួយ, អនុវត្តការត្រួតពិនិត្យ (Enforce) វានៅក្នុង Middleware និង Server Components, ហើយប្រើ Client-side checks សម្រាប់តែផ្នែក UI ប៉ុណ្ណោះ — កុំប្រើវាសម្រាប់ Security ឲ្យសោះ។
+
+## ម៉ូដែលគោល (The Core Model)
+
+```typescript
+type Role = "admin" | "editor" | "viewer"
+
+interface Permission {
+  resource: string
+  action: "read" | "write" | "delete"
+}
+
+const rolePermissions: Record<Role, Permission[]> = {
+  admin: [
+    { resource: "*", action: "read" },
+    { resource: "*", action: "write" },
+    { resource: "*", action: "delete" },
+  ],
+  editor: [
+    { resource: "posts", action: "read" },
+    { resource: "posts", action: "write" },
+  ],
+  viewer: [{ resource: "posts", action: "read" }],
+}
+```
+
+## ការការពារកម្រិត Middleware (Middleware-Level Protection)
+
+```typescript
+// middleware.ts — ដំណើរការរាល់ពេលមាន Request មុនពេល Rendering
+import { NextResponse } from "next/server"
+import type { NextRequest } from "next/server"
+
+export function middleware(request: NextRequest) {
+  const token = request.cookies.get("session")?.value
+  // បញ្ជូនអ្នកប្រើប្រាស់ដែលមិនទាន់ Login (Unauthenticated) ចេញពី Protected routes
+  if (!token && request.nextUrl.pathname.startsWith("/admin")) {
+    return NextResponse.redirect(new URL("/login", request.url))
+  }
+  return NextResponse.next()
+}
+```
+
+## ការត្រួតពិនិត្យលើ Server Component (Server Component Checks)
+
+```typescript
+// app/admin/page.tsx — ត្រួតពិនិត្យ Role នៅលើ Server, មិនមែននៅលើ Client ទេ
+import { getSession } from "@/shared/auth/session"
+import { redirect } from "next/navigation"
+
+export default async function AdminPage() {
+  const session = await getSession()
+  // ប្រសិនបើការត្រួតពិនិត្យ Role បរាជ័យ, ធ្វើការ Redirect មុនពេល UI ដំណើរការ (Renders)
+  if (session?.role !== "admin") redirect("/")
+  return <AdminDashboard />
+}
+```
+
+## ចំណុចសំខាន់បំផុត (The Key Insight)
+
+> ⚠️ **ច្បាប់សុវត្ថិភាព (Security rule):** Client components អាចត្រូវបានកែប្រែដោយនរណាម្នាក់ដែលមាន DevTools។ ត្រូវតែត្រួតពិនិត្យ (Enforce) សិទ្ធិអនុញ្ញាតនៅលើ Server ជានិច្ច — ដូចជានៅក្នុង Middleware, Server Components, ឬ API routes។
+>
+> **Client-side checks គឺសម្រាប់ UX។ Server-side checks គឺសម្រាប់ Security។ កុំច្រឡំគ្នារវាងពីរនេះឲ្យសោះ។**
+
+## សេចក្តីសន្និដ្ឋាន (Conclusion)
+
+ការធ្វើ RBAC នៅក្នុង Next.js App Router គឺងាយស្រួល នៅពេលដែលអ្នករក្សា Model ឲ្យសាមញ្ញ ហើយត្រួតពិនិត្យវានៅ Layer ដែលត្រឹមត្រូវ។ ចាប់ផ្តើមជាមួយ Middleware សម្រាប់ការការពារ Route, បន្ថែមការត្រួតពិនិត្យលើ Server Component សម្រាប់សិទ្ធិចូលប្រើកម្រិត Page, ហើយប្រើ Client checks សម្រាប់តែ UI state ប៉ុណ្ណោះ។
