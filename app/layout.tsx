@@ -16,6 +16,7 @@ const kantumruy = Kantumruy_Pro({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://limlengty.dev"),
   title: { default: "Lim Mengty", template: "%s · Lim Mengty" },
   description: "Full Stack Engineer based in Phnom Penh. Building enterprise systems and modern web applications.",
   openGraph: {
