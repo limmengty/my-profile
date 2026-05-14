@@ -14,7 +14,7 @@ export const profile = {
     { label: "GitHub", href: "https://github.com/limmengty", icon: "github" },
     { label: "LinkedIn", href: "https://linkedin.com/in/limmengty", icon: "linkedin" },
     { label: "Facebook", href: "https://facebook.com/lim.mengty.2025/", icon: "facebook" },
-    { label: "Instagram", href: "https://instagram.com/limmengty", icon: "instagram" },
+    // { label: "Instagram", href: "https://instagram.com/limmengty", icon: "instagram" },
     { label: "Telegram", href: "https://t.me/limmengty", icon: "telegram" },
     { label: "YouTube", href: "https://youtube.com/@limmengti8989", icon: "youtube" },
   ],
