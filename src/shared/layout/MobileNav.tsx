@@ -7,19 +7,14 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Button } from "@/components/ui/button"
 import { profile } from "@/data/profile"
 import { SocialLinks } from "@/shared/ui/SocialLinks"
+import { useDesktopNavItems } from "./nav-config"
 
 export function MobileNav() {
-  const t = useTranslations("nav")
   const tp = useTranslations("profile")
   const locale = useLocale()
   const [open, setOpen] = useState(false)
 
-  const navLinks = [
-    { href: "/about", label: t("about") },
-    // { href: "/projects", label: t("projects") },
-    { href: "/blog", label: t("blog") },
-    { href: "/contact", label: t("contact") },
-  ]
+  const navLinks = useDesktopNavItems()
 
   return (
     <Sheet open={open} onOpenChange={setOpen}>

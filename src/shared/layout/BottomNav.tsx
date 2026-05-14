@@ -1,27 +1,20 @@
 "use client"
+import { cn } from "@/lib/utils"
+import { AnimatePresence, motion } from "framer-motion"
+import { useLocale } from "next-intl"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { useTranslations, useLocale } from "next-intl"
-import { Home, User, Briefcase, FolderOpen, BookOpen } from "lucide-react"
-import { motion, AnimatePresence } from "framer-motion"
-import { cn } from "@/lib/utils"
+import { useBottomNavItems } from "./nav-config"
 
 export function BottomNav() {
-  const t = useTranslations("nav")
   const locale = useLocale()
   const pathname = usePathname()
 
-  const tabs = [
-    { href: "/", label: t("home"), icon: Home },
-    { href: "/about", label: t("about"), icon: User },
-    { href: "/experience", label: t("experience"), icon: Briefcase },
-    { href: "/projects", label: t("projects"), icon: FolderOpen },
-    { href: "/blog", label: t("blog"), icon: BookOpen },
-  ]
+  const tabs = useBottomNavItems()
 
   return (
     <nav
-      className="fixed bottom-0 left-0 right-0 z-[9999] md:hidden"
+      className="fixed bottom-0 left-0 right-0 z-9999 md:hidden"
       style={{ paddingBottom: "env(safe-area-inset-bottom)" }}
     >
       <div
@@ -41,7 +34,7 @@ export function BottomNav() {
             <div
               key={href}
               className="relative min-w-0"
-              style={{ flex: active ? "3 1 0%" : "1 1 0%", transition: "flex 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)" }}
+              style={{ flex: active ? "3 1 0%" : "1 1 0%", transition: "flex 0.2s ease-out" }}
             >
               <Link
                 href={fullHref}
@@ -62,7 +55,7 @@ export function BottomNav() {
                       initial={{ opacity: 0, width: 0 }}
                       animate={{ opacity: 1, width: "auto" }}
                       exit={{ opacity: 0, width: 0 }}
-                      transition={{ duration: 0.25, ease: "easeOut" }}
+                      transition={{ duration: 0.15, ease: "easeOut" }}
                       className="overflow-hidden whitespace-nowrap text-[13px] font-semibold text-primary-foreground"
                     >
                       {label}

@@ -6,21 +6,16 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { useEffect, useRef, useState } from "react"
 import { MobileNav } from "./MobileNav"
+import { useDesktopNavItems } from "./nav-config"
 
 export function Navbar() {
-  const t = useTranslations("nav")
   const tp = useTranslations("profile")
   const locale = useLocale()
   const pathname = usePathname()
   const navRef = useRef<HTMLDivElement>(null)
   const [pill, setPill] = useState<{ left: number; width: number } | null>(null)
 
-  const navLinks = [
-    { href: "/about", label: t("about") },
-    // { href: "/projects", label: t("projects") },
-    { href: "/blog", label: t("blog") },
-    { href: "/contact", label: t("contact") },
-  ]
+  const navLinks = useDesktopNavItems()
 
   useEffect(() => {
     const nav = navRef.current

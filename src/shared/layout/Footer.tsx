@@ -2,19 +2,13 @@
 import { cn } from "@/lib/utils"
 import { useLocale, useTranslations } from "next-intl"
 import Link from "next/link"
+import { useDesktopNavItems } from "./nav-config"
 
 export function Footer({ className }: Readonly<{ className?: string }>) {
-  const t = useTranslations("nav")
   const tf = useTranslations("footer")
   const tp = useTranslations("profile")
   const locale = useLocale()
-
-  const navLinks = [
-    { href: "/about", label: t("about") },
-    // { href: "/projects", label: t("projects") },
-    { href: "/blog", label: t("blog") },
-    { href: "/contact", label: t("contact") },
-  ]
+  const navLinks = useDesktopNavItems()
 
   return (
     <footer className={cn("mt-auto border-t", className)}>

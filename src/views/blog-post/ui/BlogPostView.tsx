@@ -12,7 +12,6 @@ import { SocialLinks } from "@/shared/ui/SocialLinks"
 import { CodeBlock } from "./CodeBlock"
 import { TocNav } from "./TocNav"
 import { getTranslations } from "next-intl/server"
-import { ScrollArea } from "@/components/ui/scroll-area"
 import { CopyLinkButton } from "./CopyButtons"
 import { SectionEntrance } from "@/shared/ui/SectionEntrance"
 import { profile } from "@/data/profile"
@@ -111,67 +110,67 @@ export async function BlogPostView({
         </SectionEntrance>
       )}
 
-      <div className="grid grid-cols-1 items-start gap-12 md:grid-cols-[1fr_220px]">
+      <div className="grid grid-cols-1 gap-12 md:grid-cols-[1fr_220px]">
         <article className="prose prose-zinc min-w-0 max-w-[65ch] animate-in fade-in slide-in-from-bottom-4 duration-500 text-base leading-[1.8] dark:prose-invert">
           <MDXRemote
             source={post.content}
             components={mdxComponents}
             options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }}
           />
+
+          <Separator className="my-10 not-prose" />
+
+          <div className="not-prose flex gap-2">
+            <CopyLinkButton />
+          </div>
+
+          {relatedPosts.length > 0 && (
+            <div className="not-prose mt-8">
+              <p className="mb-3 text-sm font-semibold">{tb("related")}</p>
+              <div className="flex flex-col gap-2">
+                {relatedPosts.map((r) => (
+                  <Link
+                    key={r.slug}
+                    href={`/blog/${r.slug}`}
+                    className="flex items-center gap-2 text-sm hover:underline"
+                  >
+                    <Badge variant="outline" className="capitalize text-xs">
+                      {r.type}
+                    </Badge>
+                    {r.title}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
+
+          <div className="not-prose mt-12 rounded-xl border p-6">
+            <div className="flex items-center gap-4">
+              <Avatar className="h-12 w-12">
+                <AvatarImage src="/avatar.png" alt={tp("name")} />
+                <AvatarFallback>LM</AvatarFallback>
+              </Avatar>
+              <div>
+                <p className="font-semibold">{tp("name")}</p>
+                <p className="text-sm text-muted-foreground">
+                  {tp("title")} · {tp("location")}
+                </p>
+              </div>
+            </div>
+            <div className="mt-4">
+              <SocialLinks links={profile.social} />
+            </div>
+          </div>
         </article>
 
         {toc.length > 0 && (
-          <aside className="hidden md:block">
-            <div className="fixed top-36 w-[220px]">
-              <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-muted-foreground">
-                {tb("on_this_page")}
-              </p>
-              <ScrollArea className="h-[calc(100vh-10rem)]">
-                <TocNav items={toc} />
-              </ScrollArea>
-            </div>
+          <aside className="hidden md:sticky md:top-36 md:block md:self-start md:max-h-[calc(100vh-10rem)] md:overflow-y-auto">
+            <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+              {tb("on_this_page")}
+            </p>
+            <TocNav items={toc} />
           </aside>
         )}
-      </div>
-
-      <Separator className="my-10" />
-
-      <div className="flex gap-2">
-        <CopyLinkButton />
-      </div>
-
-      {relatedPosts.length > 0 && (
-        <div className="mt-8">
-          <p className="mb-3 text-sm font-semibold">{tb("related")}</p>
-          <div className="flex flex-col gap-2">
-            {relatedPosts.map((r) => (
-              <Link key={r.slug} href={`/blog/${r.slug}`} className="flex items-center gap-2 text-sm hover:underline">
-                <Badge variant="outline" className="capitalize text-xs">
-                  {r.type}
-                </Badge>
-                {r.title}
-              </Link>
-            ))}
-          </div>
-        </div>
-      )}
-
-      <div className="mt-12 rounded-xl border p-6">
-        <div className="flex items-center gap-4">
-          <Avatar className="h-12 w-12">
-            <AvatarImage src="/images/profile.jpg" alt={tp("name")} />
-            <AvatarFallback>LM</AvatarFallback>
-          </Avatar>
-          <div>
-            <p className="font-semibold">{tp("name")}</p>
-            <p className="text-sm text-muted-foreground">
-              {tp("title")} · {tp("location")}
-            </p>
-          </div>
-        </div>
-        <div className="mt-4">
-          <SocialLinks links={profile.social} />
-        </div>
       </div>
     </div>
   )
