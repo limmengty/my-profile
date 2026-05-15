@@ -1,7 +1,6 @@
 import Link from "next/link"
 import { Send } from "lucide-react"
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip"
-import type { SocialLink } from "@/data/profile"
 
 type IconProps = { size?: number }
 const s = (p: IconProps) => ({ width: p.size ?? 18, height: p.size ?? 18 })
@@ -84,11 +83,12 @@ const iconMap: Record<string, React.ElementType> = {
   github: GithubIcon,
   linkedin: LinkedinIcon,
   facebook: FacebookIcon,
+  // instagram: InstagramIcon,
   telegram: Send,
   youtube: YoutubeIcon,
 }
 
-export function SocialLinks({ links }: Readonly<{ links: readonly SocialLink[] }>) {
+export function SocialLinks({ links }: Readonly<{ links: readonly { label: string; href: string; icon: string }[] }>) {
   return (
     <div className="flex items-center gap-3">
       {links.map(({ label, href, icon }) => {

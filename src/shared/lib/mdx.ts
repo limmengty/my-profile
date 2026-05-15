@@ -11,6 +11,8 @@ export interface PostFrontmatter {
   readTime: string
   tags: string[]
   related?: string[]
+  /** Single author id/name or multiple */
+  author?: string | string[]
 }
 
 export interface Post extends PostFrontmatter {

@@ -5,16 +5,15 @@ import remarkGfm from "remark-gfm"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { SpringButton } from "@/shared/ui/SpringButton"
 import { ScrollProgress } from "@/shared/ui/ScrollProgress"
-import { SocialLinks } from "@/shared/ui/SocialLinks"
 import { CodeBlock } from "./CodeBlock"
 import { TocNav } from "./TocNav"
 import { getTranslations } from "next-intl/server"
 import { CopyLinkButton } from "./CopyButtons"
 import { SectionEntrance } from "@/shared/ui/SectionEntrance"
-import { profile } from "@/data/profile"
+import { resolveAuthors } from "@/data/authors"
+import { AuthorCard } from "./AuthorCard"
 import type { Post } from "@/shared/lib/mdx"
 
 interface TocItem {
@@ -69,7 +68,6 @@ export async function BlogPostView({
   toc: TocItem[]
   relatedPosts: Post[]
 }>) {
-  const tp = await getTranslations("profile")
   const tb = await getTranslations("blog_post")
   return (
     <div className="mx-auto max-w-[1100px] px-4 py-16">
@@ -144,22 +142,10 @@ export async function BlogPostView({
             </div>
           )}
 
-          <div className="not-prose mt-12 rounded-xl border p-6">
-            <div className="flex items-center gap-4">
-              <Avatar className="h-12 w-12">
-                <AvatarImage src="/avatar.png" alt={tp("name")} />
-                <AvatarFallback>LM</AvatarFallback>
-              </Avatar>
-              <div>
-                <p className="font-semibold">{tp("name")}</p>
-                <p className="text-sm text-muted-foreground">
-                  {tp("title")} · {tp("location")}
-                </p>
-              </div>
-            </div>
-            <div className="mt-4">
-              <SocialLinks links={profile.social} />
-            </div>
+          <div className="not-prose mt-12 rounded-xl border p-6 flex flex-col gap-4">
+            {resolveAuthors(post.author).map((author) => (
+              <AuthorCard key={author.id} author={author} />
+            ))}
           </div>
         </article>
 
