@@ -3,7 +3,8 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: "Lim Mengty",
-  description: "Full-Stack Developer based in Phnom Penh. Orchestrating the full stack — from modern Next.js UIs to enterprise backend architecture and DevOps.",
+  description:
+    "Full-Stack Developer based in Phnom Penh. Orchestrating the full stack — from modern Next.js UIs to enterprise backend architecture and DevOps.",
   keywords: [
     "Lim Mengty",
     "Full-Stack Developer",
@@ -12,11 +13,12 @@ export const metadata: Metadata = {
     "TypeScript",
     "Java Spring Boot",
     "DevOps",
-    "Phnom Penh"
+    "Phnom Penh",
   ],
   openGraph: {
     title: "Lim Mengty",
-    description: "Orchestrating the full stack — from modern Next.js UIs to enterprise backend architecture and DevOps.",
+    description:
+      "Orchestrating the full stack — from modern Next.js UIs to enterprise backend architecture and DevOps.",
     url: "https://limmengty.com",
     siteName: "Lim Mengty Portfolio",
     locale: "en_US",
@@ -25,7 +27,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Lim Mengty — Full-Stack Developer",
-    description: "Orchestrating the full stack — from modern Next.js UIs to enterprise backend architecture and DevOps.",
+    description:
+      "Orchestrating the full stack — from modern Next.js UIs to enterprise backend architecture and DevOps.",
   },
 }
 

@@ -1,9 +1,9 @@
-import type { Metadata } from "next"
-import { notFound } from "next/navigation"
-import { getAllPosts, getPostBySlug } from "@/shared/lib/mdx"
-import { BlogPostView } from "@/views/blog-post"
 import { profile } from "@/data/profile"
 import routing from "@/i18n/routing"
+import { getAllPosts, getPostBySlug } from "@/shared/lib/mdx"
+import { BlogPostView } from "@/views/blog-post"
+import type { Metadata } from "next"
+import { notFound } from "next/navigation"
 
 export function generateStaticParams() {
   return routing.locales.flatMap((locale) => getAllPosts(locale).map((p) => ({ locale, slug: p.slug })))
@@ -31,7 +31,7 @@ function extractToc(content: string) {
   }))
 }
 
-export default async function Page({ params }: { params: Promise<{ locale: string; slug: string }> }) {
+export default async function Page({ params }: Readonly<{ params: Promise<{ locale: string; slug: string }> }>) {
   const { locale, slug } = await params
   const post = getPostBySlug(slug, locale)
   if (!post) notFound()
