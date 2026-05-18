@@ -7,6 +7,7 @@ import { Footer } from "@/shared/layout/Footer"
 import { BottomNav } from "@/shared/layout/BottomNav"
 import { CursorDot } from "@/shared/ui/CursorDot"
 import { ThemeToggle } from "@/shared/ui/ThemeToggle"
+import { TurnstileGate } from "@/shared/ui/TurnstileGate"
 import routing from "@/i18n/routing"
 
 export function generateStaticParams() {
@@ -28,16 +29,18 @@ export default async function LocaleLayout({
 
   return (
     <NextIntlClientProvider messages={messages} locale={locale}>
-      <TooltipProvider>
-        <CursorDot />
-        <Navbar />
-        <div className="fixed left-0 top-1/2 z-50 -translate-y-1/2">
-          <ThemeToggle />
-        </div>
-        <main className="flex-1 pb-16 md:pb-0">{children}</main>
-        <Footer className="hidden md:block" />
-        <BottomNav />
-      </TooltipProvider>
+      <TurnstileGate>
+        <TooltipProvider>
+          <CursorDot />
+          <Navbar />
+          <div className="fixed left-0 top-1/2 z-50 -translate-y-1/2">
+            <ThemeToggle />
+          </div>
+          <main className="flex-1 pb-16 md:pb-0">{children}</main>
+          <Footer className="hidden md:block" />
+          <BottomNav />
+        </TooltipProvider>
+      </TurnstileGate>
     </NextIntlClientProvider>
   )
 }
