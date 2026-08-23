@@ -15,8 +15,6 @@ export function TocNav({ items }: Readonly<{ items: TocItem[] }>) {
     const headingEls = items.map(({ id }) => document.getElementById(id)).filter(Boolean) as HTMLElement[]
     if (!headingEls.length) return
 
-    const onClick = (id: string) => setActiveId(id)
-
     const observer = new IntersectionObserver(
       () => {
         // Find the last heading that has passed the top threshold

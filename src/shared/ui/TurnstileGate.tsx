@@ -2,19 +2,30 @@
 
 import { useTheme } from "next-themes"
 import Script from "next/script"
-import { useCallback, useEffect, useRef, useState } from "react"
+import { useCallback, useRef, useState, useSyncExternalStore } from "react"
+
+const verifiedListeners = new Set<() => void>()
+
+function subscribeVerified(listener: () => void) {
+  verifiedListeners.add(listener)
+  return () => {
+    verifiedListeners.delete(listener)
+  }
+}
+
+function getVerifiedSnapshot(): boolean {
+  return sessionStorage.getItem("turnstile-verified") === "true"
+}
+
+function getServerSnapshot(): boolean {
+  return true
+}
 
 export function TurnstileGate({ children }: Readonly<{ children: React.ReactNode }>) {
-  const [verified, setVerified] = useState(true)
+  const verified = useSyncExternalStore(subscribeVerified, getVerifiedSnapshot, getServerSnapshot)
   const [fading, setFading] = useState(false)
   const widgetRef = useRef<HTMLDivElement>(null)
   const { resolvedTheme } = useTheme()
-
-  useEffect(() => {
-    if (sessionStorage.getItem("turnstile-verified") !== "true") {
-      setVerified(false)
-    }
-  }, [])
 
   const renderWidget = useCallback(() => {
     if (!widgetRef.current || !globalThis.window.turnstile) return
@@ -29,9 +40,11 @@ export function TurnstileGate({ children }: Readonly<{ children: React.ReactNode
         })
         const { success } = await res.json()
         if (success) {
-          sessionStorage.setItem("turnstile-verified", "true")
           setFading(true)
-          setTimeout(() => setVerified(true), 400)
+          setTimeout(() => {
+            sessionStorage.setItem("turnstile-verified", "true")
+            for (const listener of verifiedListeners) listener()
+          }, 400)
         }
       },
     })

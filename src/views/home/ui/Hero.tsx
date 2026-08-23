@@ -19,10 +19,7 @@ function Counter({ target, suffix = "" }: Readonly<{ target: number; suffix?: st
   const ref = useRef<HTMLSpanElement>(null)
   const reduced = useReducedMotion()
   useEffect(() => {
-    if (reduced) {
-      setCount(target)
-      return
-    }
+    if (reduced) return
     const observer = new IntersectionObserver(([e]) => {
       if (!e.isIntersecting) return
       observer.disconnect()
@@ -39,7 +36,7 @@ function Counter({ target, suffix = "" }: Readonly<{ target: number; suffix?: st
   }, [target, reduced])
   return (
     <span ref={ref}>
-      {count}
+      {reduced ? target : count}
       {suffix}
     </span>
   )

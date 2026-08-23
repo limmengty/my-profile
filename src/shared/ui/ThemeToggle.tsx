@@ -4,7 +4,7 @@ import { Sun, Moon } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 
 export function ThemeToggle() {
-  const { theme, setTheme, resolvedTheme } = useTheme()
+  const { setTheme, resolvedTheme } = useTheme()
   const isDark = resolvedTheme === "dark"
 
   return (

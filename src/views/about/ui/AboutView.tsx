@@ -74,7 +74,7 @@ export default function AboutView() {
             {...fadeUp(0.18)}
             className="border-l-2 border-primary/40 pl-4 italic text-muted-foreground"
           >
-            "{t("quote1")}"
+            &quot;{t("quote1")}&quot;
           </motion.blockquote>
 
           <motion.p {...fadeUp(0.22)} className="text-base leading-relaxed text-muted-foreground">
@@ -85,7 +85,7 @@ export default function AboutView() {
             {...fadeUp(0.26)}
             className="border-l-2 border-primary/40 pl-4 italic text-muted-foreground"
           >
-            "{t("quote2")}"
+            &quot;{t("quote2")}&quot;
           </motion.blockquote>
 
           <motion.div {...fadeUp(0.3)} className="flex flex-wrap gap-1.5">
